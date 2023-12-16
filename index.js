@@ -1,12 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import UserModel from "./Models/user.js";
+import cors from "cors";
 
 mongoose.connect(
   "mongodb+srv://admin:admin@train-final-test.csp1ytu.mongodb.net/train-final-test?retryWrites=true&w=majority"
 );
 
 const app = express();
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Welcome");
