@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import UserModel from "./Models/user.js";
 
 mongoose.connect(
-  "mongodb+srv://admin:admin@train-final-test.csp1ytu.mongodb.net/?retryWrites=true&w=majority"
+  "mongodb+srv://admin:admin@train-final-test.csp1ytu.mongodb.net/train-final-test?retryWrites=true&w=majority"
 );
 
 const app = express();
