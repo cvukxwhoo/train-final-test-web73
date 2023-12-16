@@ -2,7 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import UserModel from "./Models/user.js";
 
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect(
+  "mongodb+srv://admin:admin@train-final-test.csp1ytu.mongodb.net/?retryWrites=true&w=majority"
+);
 
 const app = express();
 
